@@ -46,6 +46,7 @@ main{
     height: 100vh;
     color: #0649cf;
     text-align: left;
+    min-height: 200vh;
 }
 
 .subrayado{
@@ -144,6 +145,7 @@ main{
 .crear_publicacion, .main_section_info h2{
     border-bottom: solid 4px #0649cf;
     padding-bottom: 10px;
+    width: 100vh;
 }
 
 .crear_publicacion input{
@@ -151,6 +153,10 @@ main{
     border-radius: 5px;
     font-size: 36px;
 
+}
+
+.main_section_muro{
+    flex-direction: column;
 }
 
 .input_publicacion{
@@ -182,7 +188,7 @@ main{
 .info_img{
     display: flex;
     border-radius: 15px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main_section_info{
@@ -212,7 +218,7 @@ main{
 
 .info_social{
     position: absolute;
-    bottom: 15rem;
+    top: 33rem;
     left: 50%;
 }
 
@@ -253,8 +259,68 @@ background-color: #0649cf;
 
 .info_img_dos p{
     cursor: pointer;
+    font-weight: bold;
+    margin-top: 0;
 }
 
-.info_img_dos ul{
+.main_section_div_amigos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 10px;
     
+}
+
+.main_section_perfil h3{
+    padding-left: 40px;
+}
+
+.main_section_fotos{
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    height: 100vh;
+}
+
+
+.main_section_fotos h2{
+    font-size: 32px;
+}
+
+
+.section_fotos_ft img{
+    height: 250px;
+    border-radius: 5px;
+}
+
+.section_fotos_ft{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    position: absolute;
+    top: 230px;
+    left: 36%;
+}
+
+.muro_publicaciones{
+    margin-top: 20px;
+    display: flex;
+    font-size: 20px;
+    width: 100vh;
+}
+
+.muro_publicaciones img{
+margin: 0;
+height: 80px;
+padding: 0;
+}
+
+.muro_publicaciones div{
+    margin-right: 20px;
+
+}
+
+.muro_publicaciones p {
+    box-sizing: border-box;
+    padding-top: 40px;
 }

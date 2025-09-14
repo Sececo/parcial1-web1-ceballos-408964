@@ -21,7 +21,7 @@ let perfilDos =document.getElementById('main_section_perfil_id_dos')
     a.style.display = 'flex';
     }
     hideAllSections();
-    showSection(info);
+    showSection(muro);
     showSection(perfilDos);
     muroLink.addEventListener("click", function() {
         hideAllSections();
