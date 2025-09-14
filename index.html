@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
     <title>Facebook</title>
 </head>
 <body>
     <header>
         <h1>Facebook</h1>
         <input type="text" id="header_buscar" placeholder="Buscar en Facebook">
-        <label for="header_buscar">🔍</label>
     </header> 
-    <section class="section_perfil">
-        <div class="main_section_div_foto">
-        <img src="" alt="Foto de perfil">
-        </div>
-        <h2>Nombre</h2>
-        <h3>Información</h3>
-        <h3><span>X</span>Amigos</h3>
-        <div>
-        <!-- amigos -->
-        </div>
-    </section> 
     <main>
-        <nav class="main_nav">
-            <ul>
-                <li><button id="main_nav_muro">Muro</button></li>
-                <li><button id="main_nav_info">Info</button></li>
-                <li><button id="main_nav_fotos">Fotos</button></li>
-            </ul>
-        </nav>
-        <section class="main_section_muro">
-            <div>
-                <input type="text" placeholder="Esrcibre algo...">
-                <button>Compartir</button>
-                <input type="file" id="subir_archivo">
-                <label for="subir_archivo">Adjuntar archivo</label>
+        <section class="main_section_perfil" id="main_section_perfil_id" style="display: none;">
+            <img src="assets/Xbox perfil.jpg" alt="Foto de perfil" class="foto_perfil">
+            <h2>Nombre</h2>
+            <h3 class="subrayado">Información</h3>
+            <div class="main_section_div_amigos">
+                <h3 class="subrayado"><span>X</span> Amigos</h3>
+                <a clas="amigo"><img src="assets/Xbox perfil.jpg" class="amigo" alt="perfil_amigo"></a>
+                <a clas="amigo"><img src="assets/Xbox perfil.jpg" class="amigo" alt="perfil_amigo"></a>
+                <a clas="amigo"><img src="assets/Xbox perfil.jpg" class="amigo" alt="perfil_amigo"></a>
+                <a clas="amigo"><img src="assets/Xbox perfil.jpg" class="amigo" alt="perfil_amigo"></a>
+            <!-- amigos -->
             </div>
-            <div>
+            
+        </section> 
+
+
+        <section class="main_section_perfil" id="main_section_perfil_id_dos">
+            <img src="assets/Xbox perfil.jpg" alt="Foto de perfil" class="foto_perfil">
+            <h2>Nombre</h2>
+            <h3 class="subrayado">Información</h3>
+            <div class="main_section_div_list">
+                <ul class="list_perfil_dos">
+                    <li>Email</li>
+                    <li>Teléfono</li>
+                    <li>Intereses</li>
+                    <li>Situación Sentimental</li>
+                </ul>
+            <!-- amigos -->
+            </div>
+            <div class="info_img_dos">
+                <p>Ver Todos</p>
+                <img src="assets/Xbox perfil.jpg" alt="foto_perfil">
+            </div>
+        </section> 
+
+        <nav class="main_nav">
+                <button id="main_nav_muro">Muro</button>
+                <button id="main_nav_info">Info</button>
+                <button id="main_nav_fotos">Fotos</button>
+        </nav>
+        
+        <section class="main_section_muro" id="muro">
+            <div class="crear_publicacion">
+                <input type="text" placeholder="Escribe algo..." class="input_publicacion">
+                <br>
+                <input type="file" id="subir_archivo" class="boton_subir_archivo">
+                <button type="submit">Compartir</button>
                 <!-- ventana compartir -->
             </div>
             <div>
                 <!-- publicaciones -->
             </div>
         </section>
-        <section class="main_section_info" style="display: none;">
+        <section class="main_section_info" id="info">
             <div>
                 <h2>Información</h2>
                 <ul>
@@ -52,15 +74,25 @@
                     <li>Teléfono</li>
                     <li>Intereses</li>
                     <li>Situación Sentimental</li>
-    
                 </ul>
+                <div class="info_img">
+
+                    <img src="assets/Xbox perfil.jpg" alt="foto_perfil">
+                    <p>Emal<br>70 abr</p>
+
+                </div>
+
             </div>
-            <div>
-            <!-- foto -->
+            <div >
+                <img class="div_info_img" src="assets/Xbox perfil.jpg" alt="foto_perfil">
+            </div>
+
+            <div class="info_social">
+                <button>👍Like</button>
+                <button>🔗compartir</button>
             </div>
         </section>
-
-        <section class="main_section_fotos" style="display: none;">
+        <section class="main_section_fotos" id="fotos">
             <h2>Fotos</h2>
             <div>
                 <!-- galería de fotos -->
@@ -74,6 +106,6 @@
 
 
 
-
+<script src="scripts.js"></script>
 </body>
 </html>
