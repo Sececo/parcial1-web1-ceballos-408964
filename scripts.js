@@ -22,7 +22,7 @@ let perfilDos =document.getElementById('main_section_perfil_id_dos')
     }
     hideAllSections();
     showSection(muro);
-    showSection(perfilDos);
+    showSection(perfilUno);
     muroLink.addEventListener("click", function() {
         hideAllSections();
         showSection(muro);
